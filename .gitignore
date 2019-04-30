@@ -1,0 +1,12 @@
+.DS_Store
+.swp
+.swo
+.spec.ts
+.build/*
+.build-linux/*
+Packages/*
+*.xcodeproj/
+.sass-cache/
+node_modules
+xcuserdata/
+Package.resolved

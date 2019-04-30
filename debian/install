@@ -1,0 +1,3 @@
+.build/							usr/src/k-bug
+terraform/scripts/install.sh	usr/src/k-bug
+terraform/scripts/start.sh		usr/src/k-bug

@@ -1,0 +1,9 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: k-bug
+  buildpack: swift_buildpack
+  command: "'k-bug'"
+  memory: 128M
+  random-route: true
