@@ -31,7 +31,7 @@ Note that the executable is saved to `.build-linux/debug/k-bug`.
 
 # Compiling and Running on Mac
 
-The problem only seems to manifest when running on Linux. However, should you still want to run on Mac, you may generate an xcode project with all the right settings. Type the following command:
+The problem only seems to manifest when running on Linux. However, should you still want to run on Mac, you may generate an xcode project with all the right settings using the following command:
 
 ```sh
 bash create-xcode-project.sh
@@ -43,6 +43,8 @@ You may then open the xcode project, build and run.
 
 Once you have the k-bug application running on a Linux box, use Chrome to open it http://localhost:8080
 
+> I recommend using Chrome, I did not test it with any other browser.
+
 The main page will let you indicate how many simultaneous requests you want to make and what kind.
 
 - **Use Semaphores:** Access the database using the library with semaphores to wait for each completion closure to finish.
@@ -53,13 +55,13 @@ The main page will let you indicate how many simultaneous requests you want to m
 
 | Column Name | Description |
 | ----------- | ----------- |
-| Request #   | Number of request |
-| Semaphores | Indicates if the request used semaphores or not |
+| Request #   | Number of request. |
+| Semaphores | Indicates if the request used semaphores or not. |
 | Processing Duration | How much time was actually used to process the request, does not count query time (300 ms). |
-| Query Duration | Time to execute the query |
-| Total Duration | Processing Duration + Query Duration |
-| Start Time | Indicates when the request started processing |
-| End Time | Indicates when the request finished processing |
+| Query Duration | Time to execute the query. |
+| Total Duration | Processing Duration + Query Duration. |
+| Start Time | Indicates when the request started processing. |
+| End Time | Indicates when the request finished processing. |
 
 # What to Look For
 
